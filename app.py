@@ -6,3 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return "hello world"
+
+
+from mod_admin import admin
+app.register_blueprint(admin)
