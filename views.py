@@ -5,8 +5,3 @@ from app import app
 def index():
     return "hello world"
 
-@app.route('/login/')
-def login():
-    session['name']='sara'
-    print(session)
-    return '1'
